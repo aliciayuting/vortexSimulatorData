@@ -1,0 +1,12 @@
+,start_time,end_time,worker_id,model_id,instance_id,placed_or_evicted
+0,0,0,a6f3b31a-f5b6-4bf7-975f-f9120474a643,1,40a7887e-8014-49ee-9cc6-b0d32141ee06,placed
+1,0,0,20506031-2fca-426f-bfa4-2760c12658a4,1,b7940e27-ab86-47ae-80b2-d2a9859cdc2a,placed
+2,0,0,5ae399ed-9519-4399-8d06-531b0164b6bf,1,0c46f9a6-d5a1-4888-b4a6-4a9de7c9df13,placed
+3,0,0,45c10731-b104-4536-b683-7bad72baff91,3,1cd3457f-9f6a-445e-bb03-3fa64d2772f1,placed
+4,0,0,e6f80cf6-d2e4-4ff2-919b-74679cf34fde,3,0a822d47-0ada-47ad-a846-48b2de2ab5bf,placed
+5,0,0,bc34af93-d82a-4bd7-b79b-bb00793cd5a2,3,a1a5dd52-31fc-4336-aa47-f660b18259cc,placed
+6,0,0,049453f6-bdda-4c68-80cb-ef4b48c24f4f,0,d1eb7abc-4efd-4d2b-b4f4-d73b200fff27,placed
+7,0,0,049453f6-bdda-4c68-80cb-ef4b48c24f4f,2,aa40989a-3dca-432e-a1e8-df702173e6d2,placed
+8,0,0,0529a45d-92f9-49ff-b9f8-f8ccbd9ea47c,14,e3203473-5fee-47fc-a2e0-bbc295cfc404,placed
+9,0,0,0e6b27d7-0e6e-488c-a758-36ce6735dee0,15,ddb36bd0-1d7b-41fa-b118-e89dfeecd8c9,placed
+10,0,0,07458de2-bcc5-4585-b9e0-57a458d26958,16,363dd8b8-87cc-4cba-94ff-107f75fda487,placed
