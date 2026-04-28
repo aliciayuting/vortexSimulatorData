@@ -330,6 +330,7 @@ WORKFLOW_LIST = [
          "MAX_WAIT_TIME": 1,
          "SLO": 0}]
     },
+
     {"JOB_TYPE": 7,         # ID of the type of workflow (dependency graph)
      "JOB_NAME": "textvision0",
      # the minimum amount of time necessary to execute the whole job
@@ -433,6 +434,110 @@ WORKFLOW_LIST = [
          "SLO": 0},
         ]
     },
+
+
+    # {"JOB_TYPE": 7,         # ID of the type of workflow (dependency graph)
+    #  "JOB_NAME": "textvision0",
+    #  # the minimum amount of time necessary to execute the whole job
+    #  "BEST_EXEC_TIME": 60.5,
+    #  "TASKS": [
+    #     {"MODEL_ID": 0,
+    #      "TASK_INDEX": 0,
+    #      "PREV_TASK_INDEX": [],
+    #      "NEXT_TASK_INDEX": [2],
+    #      "INPUT_SIZE": 1000, # kB
+    #      "OUTPUT_SIZE": 20000,
+    #      "MAX_EMIT_BATCH_SIZE": 4,
+    #      "MAX_WAIT_TIME": 1,
+    #      "SLO": 0}, # ms
+    #     {"MODEL_ID": 1,
+    #      "TASK_INDEX": 1,
+    #      "PREV_TASK_INDEX": [],
+    #      "NEXT_TASK_INDEX": [2],
+    #      "INPUT_SIZE": 10000, # kB
+    #      "OUTPUT_SIZE": 20000,
+    #      "MAX_EMIT_BATCH_SIZE": 4,
+    #      "MAX_WAIT_TIME": 10,
+    #      "SLO": 0},
+    #     {"MODEL_ID": 2,
+    #      "TASK_INDEX": 2,
+    #      "PREV_TASK_INDEX": [0,1],
+    #      "NEXT_TASK_INDEX": [3],
+    #      "INPUT_SIZE": 40000, # kB
+    #      "OUTPUT_SIZE": 20000,
+    #      "MAX_EMIT_BATCH_SIZE": 16,
+    #      "MAX_WAIT_TIME": 1,
+    #      "SLO": 0},
+    #     {"MODEL_ID": 3,
+    #      "TASK_INDEX": 3,
+    #      "PREV_TASK_INDEX": [2],
+    #      "NEXT_TASK_INDEX": [4],
+    #      "INPUT_SIZE": 20000, # kB
+    #      "OUTPUT_SIZE": 30000,
+    #      "MAX_EMIT_BATCH_SIZE": 0, # NOTE: should not be used
+    #      "MAX_WAIT_TIME": 1,
+    #      "SLO": 0},
+    #     {"MODEL_ID": 15,
+    #      "TASK_INDEX": 4,
+    #      "PREV_TASK_INDEX": [3],
+    #      "NEXT_TASK_INDEX": [],
+    #      "INPUT_SIZE": 30000, # kB
+    #      "OUTPUT_SIZE": 1000,
+    #      "MAX_EMIT_BATCH_SIZE": 0, # NOTE: should not be used
+    #      "MAX_WAIT_TIME": 1,
+    #      "SLO": 0}]
+    # },
+    # {"JOB_TYPE": 8,         # ID of the type of workflow (dependency graph)
+    #  "JOB_NAME": "textvision0",
+    #  # the minimum amount of time necessary to execute the whole job
+    #  "BEST_EXEC_TIME": 60.5,
+    #  "TASKS": [
+    #     {"MODEL_ID": 0,
+    #      "TASK_INDEX": 0,
+    #      "PREV_TASK_INDEX": [],
+    #      "NEXT_TASK_INDEX": [2],
+    #      "INPUT_SIZE": 1000, # kB
+    #      "OUTPUT_SIZE": 20000,
+    #      "MAX_EMIT_BATCH_SIZE": 4,
+    #      "MAX_WAIT_TIME": 1,
+    #      "SLO": 0}, # ms
+    #     {"MODEL_ID": 1,
+    #      "TASK_INDEX": 1,
+    #      "PREV_TASK_INDEX": [],
+    #      "NEXT_TASK_INDEX": [2],
+    #      "INPUT_SIZE": 10000, # kB
+    #      "OUTPUT_SIZE": 20000,
+    #      "MAX_EMIT_BATCH_SIZE": 4,
+    #      "MAX_WAIT_TIME": 10,
+    #      "SLO": 0},
+    #     {"MODEL_ID": 2,
+    #      "TASK_INDEX": 2,
+    #      "PREV_TASK_INDEX": [0,1],
+    #      "NEXT_TASK_INDEX": [3],
+    #      "INPUT_SIZE": 40000, # kB
+    #      "OUTPUT_SIZE": 20000,
+    #      "MAX_EMIT_BATCH_SIZE": 16,
+    #      "MAX_WAIT_TIME": 1,
+    #      "SLO": 0},
+    #     {"MODEL_ID": 3,
+    #      "TASK_INDEX": 3,
+    #      "PREV_TASK_INDEX": [2],
+    #      "NEXT_TASK_INDEX": [4],
+    #      "INPUT_SIZE": 20000, # kB
+    #      "OUTPUT_SIZE": 30000,
+    #      "MAX_EMIT_BATCH_SIZE": 0, # NOTE: should not be used
+    #      "MAX_WAIT_TIME": 1,
+    #      "SLO": 0},
+    #     {"MODEL_ID": 16,
+    #      "TASK_INDEX": 4,
+    #      "PREV_TASK_INDEX": [3],
+    #      "NEXT_TASK_INDEX": [],
+    #      "INPUT_SIZE": 30000, # kB
+    #      "OUTPUT_SIZE": 1000,
+    #      "MAX_EMIT_BATCH_SIZE": 0, # NOTE: should not be used
+    #      "MAX_WAIT_TIME": 1,
+    #      "SLO": 0}]
+    # },
 ]
 
 def get_task_types(job_types: list[int]) -> list[tuple[int,int]]:

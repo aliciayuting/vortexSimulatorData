@@ -25,10 +25,10 @@ MAX_NUM_MODELS_PER_NODE = 4
 
 CLIENT_CONFIGS = [ # in ms
     {6: {"SEND_RATES": [28],
-         "JOBS_PER_SEND_RATE": [1000], 
+         "JOBS_PER_SEND_RATE": [1000],
          "SLO": int(62.48 * 0)}},
     {7: {"SEND_RATES": [28],
-         "JOBS_PER_SEND_RATE": [1000], 
+         "JOBS_PER_SEND_RATE": [1000],
          "SLO": int(70.48 * 0)}},
     {8: {"SEND_RATES": [28],
          "JOBS_PER_SEND_RATE": [1000], 
@@ -76,7 +76,7 @@ ENABLE_ESTIMATOR_LOGGING = False
 """  -------        General Scheduling Parameters  --------- """
 
 # ROUND_ROBIN | SHEPHERD (central only) | HEFT (decentral only)
-DISPATCH_POLICY = "ROUND_ROBIN"
+DISPATCH_POLICY = "SHEPHERD"
 ENABLE_PIPELINING = False
 ENABLE_NETWORKING_DELAYS = False
 
