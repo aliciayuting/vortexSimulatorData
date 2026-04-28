@@ -76,7 +76,7 @@ ENABLE_ESTIMATOR_LOGGING = False
 """  -------        General Scheduling Parameters  --------- """
 
 # ROUND_ROBIN | SHEPHERD (central only) | HEFT (decentral only)
-DISPATCH_POLICY = "ROUND_ROBIN"
+DISPATCH_POLICY = "SHEPHERD"
 ENABLE_PIPELINING = False
 ENABLE_NETWORKING_DELAYS = False
 

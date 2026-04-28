@@ -25,13 +25,13 @@ MAX_NUM_MODELS_PER_NODE = 4
 
 CLIENT_CONFIGS = [ # in ms
     {1: {"SEND_RATES": [4],
-         "JOBS_PER_SEND_RATE": [1000], 
+         "JOBS_PER_SEND_RATE": [1000],
          "SLO": int(62.48 * 0)}},
     {4: {"SEND_RATES": [4],
-         "JOBS_PER_SEND_RATE": [1000], 
+         "JOBS_PER_SEND_RATE": [1000],
          "SLO": int(70.48 * 0)}},
     {5: {"SEND_RATES": [4],
-         "JOBS_PER_SEND_RATE": [1000], 
+         "JOBS_PER_SEND_RATE": [1000],
          "SLO": int(80.48 * 0)}},
 ]
 
@@ -76,7 +76,7 @@ ENABLE_ESTIMATOR_LOGGING = False
 """  -------        General Scheduling Parameters  --------- """
 
 # ROUND_ROBIN | SHEPHERD (central only) | HEFT (decentral only)
-DISPATCH_POLICY = "ROUND_ROBIN"
+DISPATCH_POLICY = "SHEPHERD"
 ENABLE_PIPELINING = False
 ENABLE_NETWORKING_DELAYS = False
 
@@ -100,23 +100,23 @@ ALLOCATION_STRATEGY = "CUSTOM" #"INFERLINE"
 
 # [(partition size in GB, [model ids])]
 CUSTOM_ALLOCATION = [
- (12, [4]), (6, [5,13]), (6, [5,13]),
- (12, [6]), (12, [6]), 
- (12, [7]), (12, [7]), 
- (12, [7]), (12, [7]),
- (12, [8]), (12, [8]),
- (24, [9]), 
- (24, [9]), 
- (24, [9]), 
- (24, [9]),
- (24, [10]),
- (24, [10]),
- (24, [10])]
+  (12, [4]), (6, [5,13]), (6, [5,13]),
+  (12, [6]), (12, [6]),
+  (12, [7]), (12, [7]),
+  (12, [7]), (12, [7]),
+  (12, [8]), (12, [8]),
+  (24, [9]),
+  (24, [9]),
+  (24, [9]),
+  (24, [9]),
+  (24, [10]),
+  (24, [10]),
+  (24, [10])]
 
-# [
-#     (24, [1]), (24, [1]), (24, [1]), (6, [3]), (6, [3]), (6, [3]), (6, [0, 2]),
-#     (6, [14]), (6, [15]), (6, [16]), (6, [])
-# ]
+#[
+#    (24, [1]), (24, [1]), (24, [1]), (6, [3]), (6, [3]), (6, [3]), (6, [0, 2]),
+#    (6, [14]), (6, [15]), (6, [16]), (6, [])
+#]
 
 # 12-node mutlitenant ppl 2 (3 versions) alloc
 # [
